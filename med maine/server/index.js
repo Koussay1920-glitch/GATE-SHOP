@@ -15,10 +15,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
-  helmet({
-    contentSecurityPolicy: false,
-    frameguard: true
-  })
+    helmet({
+        contentSecurityPolicy: false,
+        frameguard: true
+    })
 );
 app.use(cors());
 
@@ -27,8 +27,8 @@ require('./config/passport')(app);
 app.use(routes);
 
 const server = app.listen(port, () => {
-  console.log(
-    `${chalk.green('✓')} ${chalk.blue(
+            console.log(
+                    `${chalk.green('✓')} ${chalk.blue(
       `Listening on port ${port}. Visit http://localhost:${port}/ in your browser.`
     )}`
   );
