@@ -1,0 +1,14 @@
+{
+  "name": "koussay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "hamdi koussay"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
